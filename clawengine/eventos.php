@@ -25,7 +25,7 @@ while($fila_ev=mysql_fetch_row($res_ev)){
 		$b++;
 	}
 	$tot=($a/100)*$b;
-	$tabla.="<tr><td><form action='tabla.php' method='post'><input type='hidden' value='".$fila_ev[0]."'>".$fila_ev[0]."</td><td>".$b."</td><td>".$a."</td><td>".$tot."</td><td>".$fila_ev[22]."</td>
+	$tabla.="<tr><td><form action='info.php' method='post'><input type='hidden' name='id' value='".$fila_ev[0]."'>".$fila_ev[0]."</td><td>".$b."</td><td>".$a."</td><td>".$tot."</td><td>".$fila_ev[22]."</td>
 	<td><input type='submit' value='Detalles'></form></td></tr></div>";
 }
 echo $tabla;

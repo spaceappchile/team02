@@ -26,26 +26,39 @@
 
 <body>
 
+<?php
+$id=$_POST['id'];
+
+$con="select * from evento where fechaCreacion='$fe_h' or h_j<=".$lb." and h_j>=".$la." order by hora limit 4";
+$res=mysql_query($con)or die($con.mysql_error());
+$fila=mysql_fetch_row($res)
+
+	$con_usr="select nombre from usuario where idUsuario=".$fila[1];
+	$res_usr=mysql_query($con_usr)or die($con_usr.mysql_error());
+	$resp_usr=mysql_fetch_row($res_usr);
+
+?>
+
 <table style="width: 100%">
 	<tr>
 		<td class="auto-style3" style="width: 226px"><strong>Evento</strong></td>
-		<td>ev-001</td>
+		<td><?php echo $fila[0];?></td>
 	</tr>
 	<tr>
 		<td class="auto-style3" style="width: 226px"><strong>Usuario</strong></td>
-		<td>se.cabezas@hotmail.com</td>
+		<td><?php echo $resp_usr[3];?></td>
 	</tr>
 	<tr>
 		<td class="auto-style3" style="width: 226px"><strong>Localidad</strong></td>
-		<td>Santiago, Chile</td>
+		<td><?php echo $fila[19]." ".$fila[20];?></td>
 	</tr>
 	<tr>
 		<td class="auto-style3" style="width: 226px"><strong>Fecha</strong></td>
-		<td>10-03-2013</td>
+		<td><?php echo $fila[7]." ".$fila[18];?></td>
 	</tr>
 	<tr>
 		<td class="auto-style3" style="width: 226px"><strong>Tamaño</strong></td>
-		<td>Mediano</td>
+		<td><?php echo $fila[4];?></td>
 	</tr>
 	<tr>
 		<td class="auto-style3" style="width: 226px"><strong>Respuesta UR2 
