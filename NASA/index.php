@@ -68,7 +68,7 @@
 			<tr><ul>
 				<td class="auto-style8" style="width: 125px"><li class="nivel1"><a href="../clawengine/post.php" class="nivel1" target="frameContenido">home</a></li></td>
 		<td class="auto-style8" style="width: 125px"><li class="nivel1"><a href="../clawengine/evento.php" class="nivel1" target="frameContenido">Reg. Evento</a></td>
-				<td class="auto-style8" style="width: 125px"><li class="nivel1"><a href="#" class="nivel1" target="frameContenido">Eventos</a></td>
+			<td class="auto-style8" style="width: 125px"><li class="nivel1"><a href="../clawengine/eventos.php" class="nivel1" target="frameContenido">Eventos</a></td>
 				<td class="auto-style8" style="width: 125px"><li class="nivel1"><a href="../clawengine/registro.php" class="nivel1" target="frameContenido">Registrarse
 				</a></li></td>
 				</ul>
