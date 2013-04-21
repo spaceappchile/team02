@@ -1,0 +1,83 @@
+body{
+		font:75%/150% "Trebuchet MS", "Lucida Grande", "Bitstream Vera Sans", Arial, Helvetica, sans-serif;
+		color:#666666;
+		margin:60px;
+	}
+
+input, textarea, select {
+	margin:3px;
+	padding:0px 3px;
+	font:90%/180% "Trebuchet MS", "Lucida Grande", "Bitstream Vera Sans", Arial, Helvetica, sans-serif;
+	color:#666666;
+
+}
+
+/* Asterisk on required fields */
+form .req {
+	color: #F00;
+	padding: 0 4px;
+}
+
+td {
+	text-align: left;
+}
+
+label{
+	float:left;
+	margin:5px;
+	width:100px;
+	display:block;
+}
+
+label.mensaje {
+	clear:both;
+	font-weight:bold;
+	margin:0 auto 10px;
+	padding:1px 10px;
+	width:auto;
+}
+
+.merror {
+	background:#FFE6E6 url( ) no-repeat scroll left center;
+	border:1px solid #FF0000;
+	color:#FF0000;
+}
+
+/*** HEADER ***/
+#header ul {
+	padding: 0;
+	margin-left: 20px;
+	line-height: normal;
+	list-style: none;
+}
+#header ul li {
+	margin: 0;
+	padding-left: 10px;
+	padding-right: 10px;
+	float: left;
+	width: auto;
+}
+#header {
+	border-bottom:1px solid #CCCCCC;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	font-size: 12px;
+	background:#FFF;
+	color:#555555;
+	text-decoration:none;
+	list-style-type:none;
+	float:right;
+	width:40%;
+	margin-right: 400px;
+	}
+a {
+	text-decoration: none;
+	color: #00a;
+}
+a:link {text-decoration: none;
+	color: #00a;} /* unvisited link */
+a:visited {text-decoration: none;
+	color: #00a;} /* visited link */
+a:hover {text-decoration: none;
+	color: #00a;} /* mouse over link */
+a:active {text-decoration: none;
+	color: #00a;} /* selected link */

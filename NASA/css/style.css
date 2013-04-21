@@ -1,0 +1,97 @@
+/* 
+Title: Vertical CSS menu with a behavior file.
+Author: Stefan Vervoort
+Blog: http://www.divitodesign.com/blog/ 
+Article: http://www.divitodesign.com/blog/2008/01/vertical-css-menu-with-a-behavior-file/
+*/
+
+
+p a {
+	color: #000;
+	text-decoration:underline!important;
+
+}
+a{
+	color:#000;
+	text-decoration:none;
+	}
+p a:hover{	text-decoration: none!important;
+}
+
+ul#nav {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	width:-moz-max-content;
+}
+
+
+ul#nav li a {
+list-style: none;
+	display: block;
+	font-weight: bold;
+	padding: 1px 9px;
+	background:#f9f9f9;
+	height: 40px;
+}
+/* cambia de color  de opciones*/
+ul#nav li a:hover{
+	background:#888;
+	color:#fff;
+	height: 35px;
+	}
+	
+ul#nav li {
+	border:0 solid #CCCCCC;
+	float:left;
+	height:35px;
+	list-style-position:outside;
+	list-style-type:none;
+	position:relative;
+	text-align:center;
+	width:120px;
+
+	
+
+}
+
+ul#nav li.current a{
+	background:#ddd;
+	height: 35px;
+	}
+
+ul#nav li.current a:hover{
+	background:#888;
+	height: 35px;
+	}
+
+li ul {
+	display: none;
+	position: absolute;
+	width:90px;
+	height: 35px;
+	top: 0;
+	left: 0;
+/*	font-weight: normal;*/
+	padding: 1px 0 10px 0;
+	margin-left:-1px;
+}
+
+ul#nav li ul.sub li{
+	border-width:0 1px 1px 1px!important;
+	height: 35px;
+}
+
+ul#nav li ul.sub li a{
+	font-weight: normal!important;	
+	height: 35px;
+}
+li>ul {
+	top: auto;
+	left: auto;
+}
+
+li:hover ul, li.over ul {
+	display: block;
+	height: 35px;
+}
